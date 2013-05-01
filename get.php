@@ -1,5 +1,8 @@
 <?php
 
+ini_set( "log_errors", "On" );
+ini_set( "error_log", "/var/www/html/php.log" );
+
 $csv_file = $argv[1];
 $sPath = $argv[2];
 $up_file = $argv[3];

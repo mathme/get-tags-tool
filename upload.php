@@ -34,7 +34,7 @@ if (is_uploaded_file($_FILES["upfile"]["tmp_name"])) {
 	// 書き込み用CSVファイル名の設定と生成・初期化
 	$up_file = $_FILES["upfile"]["name"];
 	$csv_file = date('YmdHis').'_'.$_FILES["upfile"]["name"];
-	$sPath ='/var/www/html/jupiter/result/'.$csv_file;
+	$sPath ='/var/www/html/github/get-tags-tool/result/'.$csv_file;
 	
 	//ファイルの存在確認
 	if(file_exists($sPath)){

@@ -181,11 +181,11 @@ $mail = $argv[5];
 	fclose($fp); //URLCSVを閉じる
 	unlink("upfiles/" . $up_file);
 	
-	$sfp = fopen("./status/status.txt", "ab"); //追記モードでステータス記述用ファイルを開く
-	$sts = '<a href="./result/'. $csv_file. '">'. $csv_file. '</a>'. "\n";
-	flock($sfp, LOCK_EX);
-	fwrite($sfp, $sts);
-	fclose($sfp); //ステータス記述用ファイルを閉じる
+	//$sfp = fopen("./status/status.txt", "ab"); //追記モードでステータス記述用ファイルを開く
+	//$sts = '<a href="./result/'. $csv_file. '">'. $csv_file. '</a>'. "\n";
+	//flock($sfp, LOCK_EX);
+	//fwrite($sfp, $sts);
+	//fclose($sfp); //ステータス記述用ファイルを閉じる
 	
 	//メール送信処理
 	mb_language("Japanese");
